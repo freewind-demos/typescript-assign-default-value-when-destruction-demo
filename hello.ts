@@ -1,13 +1,19 @@
-type User = {
-  username: string,
-  active?: boolean
+type Props = {
+  name1: string,
+  name2?: string,
+  name3: string | undefined,
+  name4: string | null,
 }
 
-const user: User = {
-  username: 'typescript'
+const props: Props = {
+  name1: '',
+  name3: undefined,
+  name4: null,
 }
 
-const {username, active = true} = user;
+const {name1 = 'name1', name2 = 'name2', name3 = 'name3', name4 = 'name4'} = props;
 
-console.log(username);
-console.log(active);
+console.log("### name1:", name1);
+console.log("### name2:", name2);
+console.log("### name3:", name3);
+console.log("### name4:", name4);

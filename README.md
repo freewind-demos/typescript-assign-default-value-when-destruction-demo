@@ -1,18 +1,9 @@
-TypeScript Hello World Demo
-===========================
+TypeScript Assign Default Value When Destruction Demo
+=====================================================
+
+只有optional或者undefined值在解构时会用到default value，而null并不会。
 
 ```
 npm install
 npm run demo
 ```
-
-Note:
-
-`esModuleInterop` is recommended to set to `true`,
-since we can have consistent importing syntax with babel,
-always use:
-
-```
-import some from 'some'
-```
-
